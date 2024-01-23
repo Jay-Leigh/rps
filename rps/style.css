@@ -1,0 +1,88 @@
+body{
+    font-family: monospace;
+    font-weight: bold;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background-color: beige;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: rgb(247, 181, 82);
+}
+
+#choices{
+    margin-bottom: 30px;
+}
+
+#choices button{
+    font-size: 7.5rem;
+    min-width: 160px;
+    margin: 0 10px;
+    border: none;
+    background: none;
+}
+
+#rock:hover{
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #3b3b3d ; 
+}
+
+#paper:hover{
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #b88954; 
+}
+
+#scissors:hover{
+    transform: translateY(-10px);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    animation: animate 3s linear infinite;
+    text-shadow: 0 0 50px #cf1c1c; 
+}
+
+#choices{
+    animation-delay: 5s;
+}
+
+@keyframes animate{
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(180deg);
+    }
+}
+
+#playerDisplay, #compDisplay{
+    font-size: 2.5rem;
+}
+
+#resultDisplay{
+    font-size: 5rem;
+    margin: 30px 0;
+}
+
+#score{
+    font-size: 2rem;
+}
+
+.greenText{
+    color: rgb(79, 235, 79);
+}
+
+.redText{
+    color: #d43a3a;
+}
+
+
